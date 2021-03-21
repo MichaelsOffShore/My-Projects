@@ -53,8 +53,6 @@ public void remove(String r){
 
     }
 
-    // To remove all instances of a String end the loop at the end of the linkedList
-
 }
     
     
