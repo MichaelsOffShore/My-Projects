@@ -155,7 +155,7 @@ return current;
 /**
 * @param amount ( int Amount of money to send), String IBAN (Unique String for every user), bankAccount [] arr (Where all bank accounts are stored), 
 * String sender (The person whos sending the monney) 
-* @ return String recipients' full name
+* @return String recipients' full name
 */
 public static String sendMoney(double amount, String IBAN, bankAccount [] arr, String sender){
 
