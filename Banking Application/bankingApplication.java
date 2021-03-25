@@ -1,9 +1,8 @@
 /**
-* Made from scratch by Michael Akindolie
-**/
+* Made by Michael Akindolie
+*/
 
 import java.util.*;
-
 
 public class bankingApplication {
 
@@ -124,7 +123,6 @@ while(command != -1){
 
     }
 
-
 }
 
 command = 0;
@@ -134,7 +132,10 @@ command = 0;
 scan.close();
 
 }
-public static bankAccount findAccount(int codeInput, bankAccount [] arr){
+
+// This method can be used to find a bank account based on the pin entered
+
+    public static bankAccount findAccount(int codeInput, bankAccount [] arr){
 
 for(int k = 0; k < arr.length; k++){
 
@@ -151,6 +152,11 @@ return current;
 
 }
 // Send money to a user
+/**
+* @param amount ( int Amount of money to send), String IBAN (Unique String for every user), bankAccount [] arr (Where all bank accounts are stored), 
+* String sender (The person whos sending the monney) 
+* @ return String recipients' full name
+*/
 public static String sendMoney(double amount, String IBAN, bankAccount [] arr, String sender){
 
         int c;
